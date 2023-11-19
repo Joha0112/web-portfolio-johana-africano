@@ -10,12 +10,12 @@ const AchievementsSection = () => {
     },
     {
       metric: "Users",
-      value: "10",
+      value: "+10",
     },
    
     {
       metric: "Years",
-      value: "2",
+      value: "+2",
     },
   ];
 
