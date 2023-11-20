@@ -5,14 +5,12 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 
-
-
   const projectsData = [
     {
       id: 1,
       title: "Responsive Project",
       description: "Project 1 description: This responsive portfolio project is designed to showcase my web development work in a mobile-friendly format. It emphasizes clean and efficient design principles, ensuring a seamless user experience across various devices.",
-      image: "/images/projects/Portfolio Responsive.png",
+      image: "/images/projects/" + encodeURIComponent("Portfolio Responsive.PNG"),
       tag: ["All", "web"], 
       gitUrl: "https://github.com/Joha0112/Web-Page-Johana",
       previewUrl: "",
@@ -21,7 +19,7 @@ import { motion, useInView } from "framer-motion";
       id: 2,
       title: "Portfolio",
       description: "Project 2 description: This portfolio project showcases a collection of my web development work. It includes a variety of web applications and websites, each demonstrating different skills and technologies.",
-      image: "/images/projects/Portafolio.png",
+      image: "/images/projects/Portafolio.PNG",
       tag: ["All", "Web"], 
       gitUrl: "https://github.com/Joha0112/Johana-Africano",
       previewUrl: "https://johana-africano.vercel.app/",
@@ -30,7 +28,7 @@ import { motion, useInView } from "framer-motion";
     id: 3,
     title: "Airplane",
     description: "Project 3 description: This layout project for an airline's landing page combines attractive design and functionality, providing users with an informative and user-friendly platform to explore travel options.",
-    image: "/images/projects/aerolinea-proyecto.png" ,
+    image: "/images/projects/aerolinea-proyecto.PNG" ,
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Joha0112/aerolinea",
     previewUrl: "https://aerolinea-ten.vercel.app/",
@@ -39,7 +37,7 @@ import { motion, useInView } from "framer-motion";
     id: 4,
     title: "Funny English",
     description: "Project 4 description: It is an exciting and effective mobile application designed to facilitate the learning of the English language in an interactive and accessible way.",
-    image:"/images/projects/funny-english-figma.png",    
+    image:"/images/projects/funny-english-figma.PNG",    
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "https://www.behance.net/gallery/143531859/FUNNY-ENGLISH",
@@ -49,7 +47,7 @@ import { motion, useInView } from "framer-motion";
     id: 5,
     title: "Pinterest Clon",
     description: "Project 5 description: Pinterest Clon is a web application that replicates the core functionalities of the popular image-sharing platform, Pinterest. Users can create accounts, browse a wide range of images, and save them to their collections.",
-    image:"/images/projects/Pinterest-Clon.png",
+    image:"/images/projects/Pinterest-Clon.PNG",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Joha0112/pinterest-proyecto",
     previewUrl: "https://joha0112.github.io/pinterest-proyecto/",
@@ -58,7 +56,7 @@ import { motion, useInView } from "framer-motion";
     id: 6,
     title: "ATM",
     description: "Project 6 description: Interactive website that simulates the operation of a virtual ATM. This application allows users to check their account balances, make cash withdrawals, and deposit funds into their fictitious account.",
-    image:"/images/projects/Cajero-Automatico.png",
+    image:"/images/projects/Cajero-Automatico.PNG",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Joha0112/Cajero-Automatico",
     previewUrl: "https://joha0112.github.io/Cajero-Automatico/",
@@ -118,7 +116,7 @@ const ProjectsSection = () => {
               key={project.id}
               title={project.title}
               description={project.description}
-              imageUrl={project.image}
+              imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
