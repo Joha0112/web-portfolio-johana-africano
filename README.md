@@ -1,10 +1,6 @@
 <<<<<<< HEAD
-<<<<<<<< HEAD
-Contenido de tu versión
+...contenido de la rama local...
 =======
-Contenido de la otra versión
->>>>>>> branch-name
+...contenido de la rama remota...
+>>>>>>> FETCH_HEAD
 
-=======
-# Web-Portfolio
->>>>>>> 67cf7078d30ff625ef3127f58a1ce1dd7cd788f9
